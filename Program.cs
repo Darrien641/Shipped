@@ -11,7 +11,7 @@ namespace ShippingApp
         {
             Shipper shipper = new Shipper();
             int Selection;
-            
+            string MenuReturn = "Press any key to return to the menu";
 
             do
             {
@@ -28,19 +28,26 @@ namespace ShippingApp
                 if (Selection == 1)
                 {
                     Console.WriteLine(shipper.Add(new Bicycle()));
-                    
+                    Console.WriteLine(MenuReturn);
+                    Console.ReadKey();
                 }
                 if (Selection == 2)
                 {
                     Console.WriteLine(shipper.Add(new LawnMower()));
+                    Console.WriteLine(MenuReturn);
+                    Console.ReadKey();
                 }
                 if (Selection == 3)
                 {
                     Console.WriteLine(shipper.Add(new BaseballGlove()));
+                    Console.WriteLine(MenuReturn);
+                    Console.ReadKey();
                 }
                 if (Selection == 4)
                 {
                     Console.WriteLine(shipper.Add(new Crackers()));
+                    Console.WriteLine(MenuReturn);
+                    Console.ReadKey();
                 }
                 if (Selection == 5)
                 {
@@ -51,7 +58,7 @@ namespace ShippingApp
                 {
                     Console.WriteLine(shipper.GetShippingCost());
                 }
-            } while (Selection >= 0 && Selection <= 6);
+            } while (Selection >= 0 && Selection < 6);
 
         }
     }

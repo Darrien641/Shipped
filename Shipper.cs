@@ -22,55 +22,6 @@ namespace ShippingApp
         {
             return items;
         }
-        private int GetCrackersCount()
-        {
-            int crackers = 0;
-            foreach (IShippable s in items) 
-            {
-                if (s is Crackers)
-                {
-                    crackers++;
-                }
-            }
-
-            return crackers;
-        }
-        private int GetBicycleCount()
-        {
-            int Bicycle = 0;
-            foreach (IShippable s in items)
-            {
-                if (s is Bicycle)
-                {
-                    Bicycle++; 
-                }
-            }
-            return Bicycle;
-        }
-        private int GetLawnMowerCount()
-        {
-            int LawnMower = 0;
-            foreach (IShippable s in items)
-            {
-                if (s is LawnMower)
-                {
-                    LawnMower++;
-                }
-            }
-            return LawnMower;
-        }
-        private int GetBaseballGloveCount()
-        {
-            int Glove = 0;
-            foreach (IShippable s in items )
-            {
-                if (s is BaseballGlove)
-                {
-                    Glove++;
-                }
-            }
-            return Glove;
-        }
         public string PrintManifest()
         {
             string lm = string.Empty;
@@ -116,6 +67,55 @@ namespace ShippingApp
                     total += shippable.ShipCost;
             }
             return $"Total Shipping costs for this order is {total:$00.00}";
+        }
+        private int GetCrackersCount()
+        {
+            int crackers = 0;
+            foreach (IShippable s in items)
+            {
+                if (s is Crackers)
+                {
+                    crackers++;
+                }
+            }
+
+            return crackers;
+        }
+        private int GetBicycleCount()
+        {
+            int Bicycle = 0;
+            foreach (IShippable s in items)
+            {
+                if (s is Bicycle)
+                {
+                    Bicycle++;
+                }
+            }
+            return Bicycle;
+        }
+        private int GetLawnMowerCount()
+        {
+            int LawnMower = 0;
+            foreach (IShippable s in items)
+            {
+                if (s is LawnMower)
+                {
+                    LawnMower++;
+                }
+            }
+            return LawnMower;
+        }
+        private int GetBaseballGloveCount()
+        {
+            int Glove = 0;
+            foreach (IShippable s in items)
+            {
+                if (s is BaseballGlove)
+                {
+                    Glove++;
+                }
+            }
+            return Glove;
         }
 
     }
