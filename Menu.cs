@@ -7,7 +7,6 @@ namespace ShippingApp
 {
     static class Menu
     {
-        static Shipper shipper = new Shipper();
         private static string[] MenuList = new string[]
         {
                 "Add Bicycle to Shipment",

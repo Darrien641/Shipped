@@ -9,10 +9,6 @@ namespace ShippingApp
     class Shipper
     {
         List<IShippable> items = new List<IShippable>();
-
-        public Shipper()
-        {
-        }
         public string Add(IShippable shippable)
         {
             items.Add(shippable);

@@ -6,7 +6,6 @@ namespace ShippingApp
 {
     class LawnMower : IShippable
     {
-        
         public LawnMower()
         {
             ShipCost = 24.00M;
