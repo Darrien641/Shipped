@@ -58,6 +58,7 @@ namespace ShippingApp
                 {
                     Console.WriteLine(shipper.GetShippingCost());
                 }
+                Console.WriteLine();
             } while (Selection >= 0 && Selection < 6);
 
         }
