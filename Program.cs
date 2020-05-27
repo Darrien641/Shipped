@@ -57,6 +57,8 @@ namespace ShippingApp
                 if (Selection == 6)
                 {
                     Console.WriteLine(shipper.GetShippingCost());
+                    Console.WriteLine("Press Any key to Exit");
+                    Console.ReadKey();
                 }
                 Console.WriteLine();
             } while (Selection >= 0 && Selection < 6);
